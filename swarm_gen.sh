@@ -62,7 +62,7 @@ function action_deploy() {
 
   # initialize swarm mode and create a manager
   echo -e "${color_cyan}\t=> Initializing first swarm manager ...${color_reset}"
-  docker-machine ssh ${manager_basename}1 "docker swarm init --listen-addr $(docker-machine ip manager1) --advertise-addr $(docker-machine ip ${manager_basename}1)"
+  docker-machine ssh ${manager_basename}1 "docker swarm init --listen-addr $(docker-machine ip ${manager_basename}1) --advertise-addr $(docker-machine ip ${manager_basename}1)"
 
   # get manager and worker tokens
   export m_token=`docker-machine ssh ${manager_basename}1 "docker swarm join-token manager -q"`
