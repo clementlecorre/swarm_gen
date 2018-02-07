@@ -1,5 +1,5 @@
 #!/bin/bash
-# Github: https://github.com/cl3m3nt666/swarm_gen
+# Github: https://github.com/clementlecorre/swarm_gen
 # Maintainer: clement@le-corre.eu
 # Description: Bash script to deploy a swarm infrastructure using docker-machine
 
